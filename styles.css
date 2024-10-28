@@ -49,6 +49,10 @@ header nav ul li a:hover {
 /* Seção de Introdução */
 .hero {
   background: url('./assets/background.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
