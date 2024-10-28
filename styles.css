@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    font-size: 1.5em;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header nav ul li a:hover {
+    color: #f97316;
+  }
+  
+  /* Seção de Introdução */
+  .hero {
+    background: url('./assets/background.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5em;
+  }
+  
+  .hero-content p {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #f97316;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #d45b14;
+  }
+  
+  /* Serviços */
+  .services {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .services h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .service-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Clientes */
+  .clients {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .clients h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .client-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .client-logos img {
+    max-width: 150px;
+    margin: 5px;
+  }
+  
+  /* Contato */
+  footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .social-media a {
+    color: #f97316;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content h2 {
+      font-size: 2em;
+    }
+  
+    .hero-content p {
+      font-size: 1em;
+    }
+  }
+  
