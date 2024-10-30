@@ -3,10 +3,11 @@
     background-color: #af1f1f;
   }
   .navbar {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
     justify-content: center;
     align-items: center;
+    position: static !important;
   }
   .navbar .navbar-logo {
     margin: 5px;
@@ -61,7 +62,7 @@
   .hero-section .button {
     background-color: #af1f1f;
     color: white;
-    border: 1px solid red;
+    border: 1px solid #af1f1f;
     border-radius: 8px;
   }
   .services-section {
@@ -75,6 +76,14 @@
     margin-top: 20px;
     color: #4a4a4a;
   }
+  .services-section .container-service-item {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+  }
+  
   .services-section .service-item {
     display: flex;
     flex-direction: column;
@@ -108,7 +117,14 @@
   .clients-section .clients-subtitle {
     font-size: 15px;
     color: #374151;
+    padding: 10px;
   }
+  .clients-section .container-clients-item {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+}
+
   .clients-section .clients-item {
     display: flex;
     flex-direction: column;
